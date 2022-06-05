@@ -1,0 +1,15 @@
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+p {
+    font-style: italic;
+    font-weight: 700;
+}
+
+select {
+    margin-right: 20px;
+}
