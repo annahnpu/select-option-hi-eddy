@@ -14,15 +14,16 @@
 
     <div class="year">
       <p>Select year
-      <select name="select" id="year-select">
-        <option value="1900">1900</option>
-        <option value="1901">1901</option>
-        <option value="1902">1902</option>
-        <option value="1903" selected>1903</option>
-        <option value="1904">1904</option>
-        <option value="1905">1905</option>
-        <option value="1906">1907</option>
-        <option value="1908">1908</option></p>
+        <select name="select" id="year-select">
+          <option value="1900">1900</option>
+          <option value="1901">1901</option>
+          <option value="1902">1902</option>
+          <option value="1903" selected>1903</option>
+          <option value="1904">1904</option>
+          <option value="1905">1905</option>
+          <option value="1906">1907</option>
+          <option value="1908">1908</option>
+      </p>
       </select>
     </div>
 
@@ -33,29 +34,92 @@ optionElement.setAttribute('value', march);
 optionElement.innerHTML = march; и так для каждого месяца?-->
     <div class="month">
       <p>Select month
-      <select name="select-month" id="month-select">
-        <option value="january" selected>January</option>
-        <option value="february">February</option>
-        <option value="march">March</option>
-        <option value="may">May</option>
-        <option value="june">June</option>
-        <option value="july">July</option>
-        <option value="august">August</option>
-        <option value="september">September</option>
-        <option value="october">October</option>
-        <option value="november">November</option>
-        <option value="december">December</option></p>
+        <select name="select-month" id="month-select">
+          <option value="january" selected>January</option>
+          <option value="february">February</option>
+          <option value="march">March</option>
+          <option value="may">May</option>
+          <option value="june">June</option>
+          <option value="july">July</option>
+          <option value="august">August</option>
+          <option value="september">September</option>
+          <option value="october">October</option>
+          <option value="november">November</option>
+          <option value="december">December</option>
+      </p>
       </select>
     </div>
 
     <div class="select-day">
       <p>Select day
-      <select name="day" id="day-select">
-        <option value="1" selected>1</option>
-        <option value="2">2</option></p>
+        <select name="day" id="day-select">
+          <option value="1" selected>1</option>
+          <option value="2">2</option>
+      </p>
       </select>
     </div>
   </form>
+
+
+  <!---->
+
+  <div id="nav">
+    <div class="menu-item">
+      Меню 1
+      <div class="submenu">Подменю</div>
+      <div class="submenu">Подменю</div>
+      <div class="submenu">Подменю</div>
+    </div>
+    <div class="menu-item">
+      Меню 2
+      <div class="submenu">Подменю</div>
+      <div class="submenu">Подменю</div>
+      <div class="submenu">Подменю</div>
+    </div>
+    <div class="menu-item">
+      Меню 3
+      <div class="submenu">Подменю</div>
+      <div class="submenu">Подменю</div>
+      <div class="submenu">Подменю</div>
+    </div>
+  </div>
+
+<!--https://www.youtube.com/watch?v=zf59Rg_KYk8
+Выпадающее меню
+<div class="wrapper">
+  <nav class="menu2">
+    <ul class="menu_list">
+      <li>
+        <a href="" class="menu_link">Первый уровень</a>
+      <ul class="sub-menu_list">
+        <li>
+          <a href="" class="sub-menu_link">Второй уровень</a>
+        </li>
+        <li>
+          <a href="" class="sub-menu_link">Второй уровень</a>
+        </li>
+        <li>
+          <a href="" class="sub-menu_link">Второй уровень</a>
+        </li><li>
+          <a href="" class="sub-menu_link">Второй уровень</a>
+          <ul class="sub-sub-menu_list">
+            <li>
+              <a href="" class="sub-sub-menu_link">Третий уровень</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      </li>
+      <li>
+        <a href="" class="menu_link">Первый уровень</a>
+      </li>
+      <li>
+        <a href="" class="menu_link">Первый уровень</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+!-->
 
   <script src="./script.js"></script>
 </body>

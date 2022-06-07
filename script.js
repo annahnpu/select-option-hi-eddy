@@ -36,5 +36,37 @@ for (let day = 3; day <= 31; day++) {
     daySelectElement.insertAdjacentElement('beforeEnd', optionElement);
 }
 
-//* month+year https://ru.stackoverflow.com/questions/774065/%D0%92%D1%8B%D0%BF%D0%B0%D0%B4%D0%B0%D1%8E%D1%89%D0%B8%D0%B9-%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%B4%D0%B0%D1%82%D1%8B-%D0%BD%D0%B0-javascript
+//*https://www.youtube.com/watch?v=H_UiIfgNDPE
+
+//*по наведению мыши
+
+document.getElementById('nav').onmouseover = function(event) {
+    let target = event.target;
+    if (target.className == 'menu-item') {
+        let s = target.getElementsByClassName('submenu');
+        closeMenu();
+        s[0].style.display='block';
+    }
+}
+    
+    document.onmouseover = function(event) {
+        let target = event.target;
+        console.log(event.target);
+        if (target.className!='menu-item' && target.className!='submenu'){
+            closeMenu();
+        }
+    }
+
+    function closeMenu() {
+        let menu = document.getElementById('nav');
+        let subm=document.getElementsByClassName('submenu');
+        for (let i=0; i <subm.lenght; i++) {
+            subm[i].style.display="none";
+        }
+    }
+
+
+//*https://www.youtube.com/watch?v=zf59Rg_KYk8
+//* Выпадающее меню
+
 
